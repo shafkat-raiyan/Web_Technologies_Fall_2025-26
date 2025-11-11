@@ -1,0 +1,18 @@
+.laptop-container {
+    display:inline-block;
+    align-content: center;
+    padding: 20px;
+    margin: 10px;
+    border: 2px solid rgb(243, 5, 5);
+
+    border-radius: 5%;
+   
+   
+}
+
+.buy-button {
+    
+    display: flex;
+    justify-content: center;
+
+}
