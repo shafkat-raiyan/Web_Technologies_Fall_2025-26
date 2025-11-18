@@ -52,17 +52,9 @@ function submitForm() {
         inpersonAttendence++;
     }
 
-    resetForm();
-
     return true;
 }
 
-function resetForm() {
-    document.getElementById("fullname").value = "";
-    document.getElementById("email").value = "";
-    document.getElementById("company").value = "";
-    document.querySelector('input[name="attendence"]:checked').checked = false;
-}
 
 function analytics() {
     const panel = document.getElementById('analytics');
