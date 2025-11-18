@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="functions.js"></script>
+</head>
+<body>
+
+    <h2>Global Tech Connect</h2>
+    <p>Global Tech Connect organizes regular workshops, webinars, and networking events for professionals and enthusiasts.</p>
+    <h3>Welcome to our registration form</h3>
+
+    <div class="form-container">
+        
+            <div class="input-group">
+                <label>Full Name</label>
+                <input type="text" id="fullname">
+                <p id="nameErr" style="color:red;"></p>
+            </div>
+            <div class="input-group">
+                <label>Professional Email</label>
+                <input type="email" id="email">
+                <p id="emailErr" style="color:red;"></p>
+            </div>
+            <div class="input-group">
+                <label>Company/Institution</label>
+                <input type="text" id="company">
+                <p id="companyErr" style="color:red;"></p>
+            </div>
+
+            <div class="input-group">
+                <label>Attendence Type:</label>
+                <div class="radio-group">
+                    <label class="radio-option">
+                        <input type="radio" name="attendence" value="In-Person">
+                        In-Person
+                    </label>
+                    <label class="radio-option">
+                        <input type="radio" name="attendence" value="Virtual">
+                        Virtual
+                    </label>
+                </div>
+                <p id="attendenceErr" style="color:red;"></p>
+            </div>
+            <div class="button">
+                <button type="button" onclick="submitForm()">Submit</button>
+            </div>
+
+             <div class="button">
+                <button id="analyticsBtn" onclick="analytics()">Show Analytics</button>
+            </div>
+            <div class="analytics" id="analytics" style="display: none;">
+                <p>Total Attendence: <span id="totalAttendence"></span></p>
+                <p>Virtual Attendence: <span id="virtualAttendence"></span></p>
+                <p>In-Person Attendence: <span id="inpersonAttendence"></span></p>
+            </div>
+            
+
+    </div>
+    
+</body>
+</html>
